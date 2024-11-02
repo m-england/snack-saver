@@ -5,8 +5,6 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="https://m-england.github.io/snack-saver/donut-bitten.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-signin-client_id"
-        content="397214112278-cqkkgppbq08odlaoa7lglrf29evon1jd.apps.googleusercontent.com">
     <title>Snack Saver</title>
 
     <script>
@@ -42,7 +40,12 @@
         </form>
     </main>
 
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div id="g_id_onload" data-client_id="397214112278-cqkkgppbq08odlaoa7lglrf29evon1jd.apps.googleusercontent.com"
+        data-callback="handleCredentialResponse">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
+
 </body>
 
 </html>
