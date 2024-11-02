@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/camera.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snack Saver</title>
+  <script type="module" crossorigin src="/assets/index-BS7yIKFu.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CaCP46kN.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <img src="./donut-bitten.svg" />
+            <h1>SnackSaver</h1>
+        </nav>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <img id="camera-image" src="./camera.svg" />
+            <input type="file" id="camera-input" name="cameraInput" accept="image/*" capture="environment">
+            <select>
+                <option>Album 1</option>
+                <option>Album 2</option>
+                <option>Album 3</option>
+            </select>
+            <button type="submit">Upload</button>
+        </form>
+    </main>
+
+
+</body>
+
+</html>
