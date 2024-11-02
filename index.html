@@ -6,22 +6,7 @@
     <link rel="icon" type="image/svg+xml" href="https://m-england.github.io/snack-saver/donut-bitten.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snack Saver</title>
-
-    <script>
-        function onSignIn(googleUser) {
-            var profile = googleUser.getBasicProfile();
-            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-            console.log('Name: ' + profile.getName());
-            console.log('Image URL: ' + profile.getImageUrl());
-            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-        }
-
-        function handleCredentialResponse(something) {
-            console.log('handled', something)
-        }
-
-    </script>
-  <script type="module" crossorigin src="https://m-england.github.io/snack-saver/assets/index-BS7yIKFu.js"></script>
+  <script type="module" crossorigin src="https://m-england.github.io/snack-saver/assets/index-BVIVu5Cf.js"></script>
   <link rel="stylesheet" crossorigin href="https://m-england.github.io/snack-saver/assets/index-CaCP46kN.css">
 <link rel="manifest" href="https://m-england.github.io/snack-saver/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="https://m-england.github.io/snack-saver/registerSW.js"></script></head>
 
@@ -33,14 +18,13 @@
         </nav>
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <form action="/upload" method="post" enctype="multipart/form-data">
-            <img id="camera-image" src="https://m-england.github.io/snack-saver/camera.svg" />
-            <input type="file" id="camera-input" name="cameraInput" accept="image/*" capture="environment">
             <select>
                 <option>Album 1</option>
                 <option>Album 2</option>
                 <option>Album 3</option>
             </select>
-            <button type="submit">Upload</button>
+            <img id="camera-image" src="https://m-england.github.io/snack-saver/camera.svg" />
+            <input type="file" id="camera-input" name="cameraInput" accept="image/*" capture="environment">
         </form>
     </main>
 
