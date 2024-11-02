@@ -3,9 +3,22 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://m-england.github.io/snack-saver/camera.svg" />
+    <link rel="icon" type="image/svg+xml" href="https://m-england.github.io/snack-saver/donut-bitten.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-signin-client_id"
+        content="397214112278-cqkkgppbq08odlaoa7lglrf29evon1jd.apps.googleusercontent.com">
     <title>Snack Saver</title>
+
+    <script>
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        }
+
+    </script>
   <script type="module" crossorigin src="https://m-england.github.io/snack-saver/assets/index-BS7yIKFu.js"></script>
   <link rel="stylesheet" crossorigin href="https://m-england.github.io/snack-saver/assets/index-CaCP46kN.css">
 <link rel="manifest" href="https://m-england.github.io/snack-saver/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="https://m-england.github.io/snack-saver/registerSW.js"></script></head>
@@ -16,6 +29,7 @@
             <img src="https://m-england.github.io/snack-saver/donut-bitten.svg" />
             <h1>SnackSaver</h1>
         </nav>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <form action="/upload" method="post" enctype="multipart/form-data">
             <img id="camera-image" src="https://m-england.github.io/snack-saver/camera.svg" />
             <input type="file" id="camera-input" name="cameraInput" accept="image/*" capture="environment">
@@ -28,7 +42,7 @@
         </form>
     </main>
 
-
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 
 </html>
