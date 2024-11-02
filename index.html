@@ -6,17 +6,19 @@
     <link rel="icon" type="image/svg+xml" href="https://m-england.github.io/snack-saver/donut-bitten.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snack Saver</title>
-  <script type="module" crossorigin src="https://m-england.github.io/snack-saver/assets/index-D5eFuRZz.js"></script>
-  <link rel="stylesheet" crossorigin href="https://m-england.github.io/snack-saver/assets/index-CaCP46kN.css">
+  <script type="module" crossorigin src="https://m-england.github.io/snack-saver/assets/index-DUMaoKOX.js"></script>
+  <link rel="stylesheet" crossorigin href="https://m-england.github.io/snack-saver/assets/index-Bfh_ibg4.css">
 <link rel="manifest" href="https://m-england.github.io/snack-saver/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="https://m-england.github.io/snack-saver/registerSW.js"></script></head>
 
 <body>
     <main>
         <nav>
-            <img src="https://m-england.github.io/snack-saver/donut-bitten.svg" />
-            <h1>SnackSaver</h1>
+            <div>
+                <img src="https://m-england.github.io/snack-saver/donut-bitten.svg" />
+                <h1>SnackSaver</h1>
+            </div>
+            <button id="login-button">Login</button>
         </nav>
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <form action="/upload" method="post" enctype="multipart/form-data">
             <select>
                 <option>Album 1</option>
@@ -28,7 +30,6 @@
         </form>
     </main>
 
-    <button id="login-button">Login</button>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 </body>
 
